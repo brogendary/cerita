@@ -1,0 +1,72 @@
+body{
+    background-color: #ff9494;
+opacity: 0.7;
+background: radial-gradient(circle, transparent 20%, #ff9494 20%, #ff9494 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ff9494 20%, #ff9494 80%, transparent 80%, transparent) 100px 100px, linear-gradient(#ffe3e1 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #ffe3e1 8px, #ff9494 8px) -4px 0;
+background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    background: rgb(248, 232, 238);
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+    margin: auto;
+    margin-top: 100px;
+  }
+  
+  .card:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    background: #FFF5E4;
+  }
+  
+  .first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
+  
+  .card:hover .first-content {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+  }
+
+  .hbis{
+    font-size: 20px;
+  }
+
+  .linkkk{
+    font-size: 10px;
+  }
+  
+  .card:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }
+  
